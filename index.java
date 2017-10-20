@@ -140,7 +140,7 @@ class index {
 		showMenu(storedData);
 	}
 }
-
+//calass base data
 class BaseData {
 	String name1, name2, name3;
 	int name4;
