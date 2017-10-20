@@ -136,7 +136,7 @@ class index {
 			storedData[i] = new BaseData();
 		}
 		
-		// Go
+		// Go somewhere
 		showMenu(storedData);
 	}
 }
