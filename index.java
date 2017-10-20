@@ -1,17 +1,17 @@
 import java.util.Scanner;
 class index {
-
+	// ini adalah menambah deklarasi Scanner dan String Menu dan nilai N
 	public static Scanner scanner = new Scanner(System.in);
 	public static String menu = "0";
 	public static int N = 5;
-
+	//membuat method
 	public static void insertData(BaseData storedData[]) {
 		System.out.println("// todo insertData");
 		System.out.println("-----------------------------------------------------");
 		showMenu(storedData);
 	}
 
-	public static void showData(BaseData storedData[]) {
+	public static void tampilData(BaseData storedData[]) {
 		System.out.println("// todo showData");
 		System.out.println("-----------------------------------------------------");
 		showMenu(storedData);
@@ -110,7 +110,7 @@ class index {
 
 		switch (menu) {
 			case "1": insertData(storedData); break;
-			case "2": showData(storedData); break;
+			case "2": tampilData(storedData); break;
 			case "3": showMenuAdd(storedData); break;
 			case "4": searchData(storedData); break;
 			case "5": editData(storedData); break;
@@ -129,7 +129,7 @@ class index {
 
 	public static void main(String[] args) {
 		// show welcome message
-		System.out.println("Selamat data, Anda Puas kami Lemas!!");
+		System.out.println("Selamat datang di program kami !!");
 
 		BaseData storedData[] = new BaseData[20];
 		for (int i = 0; i <= N-1; i++) {
